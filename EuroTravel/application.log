@@ -38,3 +38,19 @@ Caused by: java.io.FileNotFoundException: Data\City_info_hh.csv (The system cann
 	at com.goeuro.api.service.impl.CityInfoServiceImpl.printCityInfo(CityInfoServiceImpl.java:59)
 	... 1 more
 ---------------  COMPLETE STACK TRACE   -------------------------------
+2016-01-02 12:53:42 ERROR ApplicationLogger:164 - ----------------ERROR----Debugging Information-----------
+
+Message	:Error while getting Info For city :
+Possible Root Cause		:ArrayIndexOutOfBoundsException: 0
+---------------  COMPLETE STACK TRACE   -------------------------------
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.goeuro.api.main.GoEuroApplication.main(GoEuroApplication.java:34)
+---------------  COMPLETE STACK TRACE   -------------------------------
+2016-01-02 12:54:05 ERROR ApplicationLogger:164 - ----------------ERROR----Debugging Information-----------
+
+Message	:Error while getting Info For city :
+Possible Root Cause		:ArrayIndexOutOfBoundsException: 0
+---------------  COMPLETE STACK TRACE   -------------------------------
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at com.goeuro.api.main.GoEuroApplication.main(GoEuroApplication.java:34)
+---------------  COMPLETE STACK TRACE   -------------------------------

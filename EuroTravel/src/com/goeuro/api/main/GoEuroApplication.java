@@ -25,13 +25,26 @@ public class GoEuroApplication
 
 	public static void main(String[] args)
 	{
-		CityInfoService cityInfoService = new CityInfoServiceImpl();
+		List<CityInfo> cityInfo = null;
 		String cityName = "";
-		System.out.println("CSV Files will be created under 'Data' folder at JVM run path. ");
 		try
 		{
+			CityInfoService cityInfoService = new CityInfoServiceImpl();
+			System.out.println("CSV Files will be created under 'Data' folder at JVM run path. ");
+			if (args.length < 1 || StringUtils.isBlank(cityName))
+			{
+				System.out.println("Please enter valid city name as argument to program. ");
+			}
+			else
+			{
+				cityName = args[0];
+				cityInfo = cityInfoService.getCityInfo(cityName);
+				cityInfoService.printCityInfo(cityName, cityInfo);
+				System.out.println("Sucessfull created CSV file for the city : " + cityName);
+			}
+
 			BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
-			List<CityInfo> cityInfo = null;
+
 			main: while (true)
 			{
 				System.out.println("Enter City name  or press 0 to exit. ");
@@ -50,6 +63,7 @@ public class GoEuroApplication
 						default:
 							cityInfo = cityInfoService.getCityInfo(cityName);
 							cityInfoService.printCityInfo(cityName, cityInfo);
+							System.out.println("Sucessfull created CSV file for the city : " + cityName);
 							break;
 					}
 

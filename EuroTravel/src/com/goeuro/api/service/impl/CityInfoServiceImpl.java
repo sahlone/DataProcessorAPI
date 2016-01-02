@@ -23,7 +23,7 @@ import com.goeuro.api.service.CityInfoService;
 
 public class CityInfoServiceImpl implements CityInfoService
 {
-	private static final String[]	headers	= new String[] { "_id", "name", "latitude", "longitude" };
+	private static final String[]	headers	= new String[] { "_id", "name", "type", "latitude", "longitude" };
 
 	@Override
 	@SuppressWarnings("unchecked")
@@ -78,7 +78,7 @@ public class CityInfoServiceImpl implements CityInfoService
 			for (CityInfo cityInfo : info)
 			{
 				String[] row = new String[] { getStringValue(cityInfo.get_id()), getStringValue(cityInfo.getName()),
-						getStringValue(cityInfo.getGeo_position().getLatitude()),
+						getStringValue(cityInfo.getType()), getStringValue(cityInfo.getGeo_position().getLatitude()),
 						getStringValue(cityInfo.getGeo_position().getLongitude()) };
 				data.add(row);
 			}
