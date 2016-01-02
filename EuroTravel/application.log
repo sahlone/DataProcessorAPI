@@ -1,0 +1,40 @@
+2015-12-31 20:58:35 ERROR GoEuroApplication:58 - com.goeuro.api.data.APIException: Data\City_info_mumbai.csv (The system cannot find the path specified)
+2015-12-31 20:59:01 ERROR GoEuroApplication:59 - [Ljava.lang.StackTraceElement;@29f1efce
+2015-12-31 21:05:03 ERROR GoEuroApplication:58 - com.goeuro.api.data.APIException: Data\City_info_mumbai.csv (The system cannot find the path specified)
+2015-12-31 21:05:27 ERROR GoEuroApplication:59 - [Ljava.lang.StackTraceElement;@13daac11
+2015-12-31 21:06:58 ERROR GoEuroApplication:58 - com.goeuro.api.data.APIException: Data\City_info_mumbai.csv (The system cannot find the path specified)
+2015-12-31 21:06:58 ERROR GoEuroApplication:59 - [Ljava.lang.Throwable;@6cdd08eb
+2015-12-31 21:16:16 ERROR ApplicationLogger:59 - com.goeuro.api.data.APIException: Data\City_info_musfsf.csv (The system cannot find the path specified)
+2015-12-31 21:16:16 ERROR ApplicationLogger:60 - [Ljava.lang.Throwable;@49940c14
+2015-12-31 21:19:16 ERROR ApplicationLogger:59 - com.goeuro.api.data.APIException: Data\City_info_mumbai.csv (The system cannot find the path specified)
+2015-12-31 21:21:21 ERROR ApplicationLogger:61 - com.goeuro.api.data.APIException: Data\City_info_mumbai.csv (The system cannot find the path specified)
+2015-12-31 21:23:32 ERROR ApplicationLogger:164 - ----------------ERROR----Debugging Information-----------
+
+Message	:
+Possible Root Cause		:FileNotFoundException: Data\City_info_dfssdf.csv (The system cannot find the path specified)
+---------------  COMPLETE STACK TRACE   -------------------------------
+com.goeuro.api.data.APIException: Data\City_info_dfssdf.csv (The system cannot find the path specified)
+	at com.goeuro.api.service.impl.CityInfoServiceImpl.printCityInfo(CityInfoServiceImpl.java:76)
+	at com.goeuro.api.main.GoEuroApplication.main(GoEuroApplication.java:52)
+Caused by: java.io.FileNotFoundException: Data\City_info_dfssdf.csv (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at com.goeuro.api.service.impl.CityInfoServiceImpl.printCityInfo(CityInfoServiceImpl.java:59)
+	... 1 more
+---------------  COMPLETE STACK TRACE   -------------------------------
+2015-12-31 21:28:51 ERROR ApplicationLogger:164 - ----------------ERROR----Debugging Information-----------
+
+Message	:Error while getting Info For city :hh
+Possible Root Cause		:FileNotFoundException: Data\City_info_hh.csv (The system cannot find the path specified)
+---------------  COMPLETE STACK TRACE   -------------------------------
+com.goeuro.api.data.APIException: Data\City_info_hh.csv (The system cannot find the path specified)
+	at com.goeuro.api.service.impl.CityInfoServiceImpl.printCityInfo(CityInfoServiceImpl.java:93)
+	at com.goeuro.api.main.GoEuroApplication.main(GoEuroApplication.java:51)
+Caused by: java.io.FileNotFoundException: Data\City_info_hh.csv (The system cannot find the path specified)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at com.goeuro.api.service.impl.CityInfoServiceImpl.printCityInfo(CityInfoServiceImpl.java:59)
+	... 1 more
+---------------  COMPLETE STACK TRACE   -------------------------------
